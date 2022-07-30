@@ -18,7 +18,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 48px;
+}
+
+.purple {
+    color: #5c39f7;
 }
 
 p {
@@ -38,6 +42,14 @@ a {
     margin: 0 auto;
 }
 
+/* LANDING */
+#landing{
+    display: flex;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* NAV */
 nav {
     display: flex;
@@ -48,6 +60,7 @@ nav {
 
 .nav__links {
     display: flex;
+    align-items: center;
 }
 
 .nav__link, 
@@ -61,8 +74,9 @@ nav {
     margin: 12px 28px;
 }
 
-.nav__login {
-    margin: 12px 28px 12px 48px;
+.nav__link:nth-child(5) {
+    margin-left: 42px;
+    /* /* padding-left: 32px; */
 }
 
 .nav__signup {
@@ -94,7 +108,64 @@ nav {
     color: #6415ff;
 }
 
-.main__img {
-    width: 512px;
-    height: 512px;
+
+/* Row landing */
+
+.row__landing {
+    display: flex;
+    align-items: center;
+    margin: 36px 0px;
+}
+
+.column__landing {
+    position: relative;
+    width: 40%;
+}
+
+.landing__header {
+    /* margin-bottom: 24px; */
+}
+
+.landing__description {
+    margin: 32px 0px;
+}
+
+.landing__input--group {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.landing__input {
+    border: solid 2px rgb(160, 174, 192);
+    border-radius: 100px;
+    padding: 16px 198px 16px 32px;
+    width: 100%;
+}
+
+.landing__button {
+    background-color: rgb(60, 13, 153);
+    margin-bottom: 16px;
+    margin-right: 8px;
+    margin-top: 16px;
+    padding: 16px 0;
+    font: bold;
+    line-height: 24px;
+    text-align: center;
+    border: solid 2px rgb(160, 174, 192);
+    border-radius: 50px;
+    position: absolute;
+    left: 60%;
+    width: 40%;
+    display:none;
+}
+
+.landing__img--wrapper {
+    width: 60%;
+}
+
+.landing__img {
+    width: 100%;
+    height: 100%;
 }
