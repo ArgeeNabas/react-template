@@ -26,6 +26,57 @@
                     <li><a href="#" class="nav__link nav__link--login hover-underline-animation">Login</a></li>
                     <li><a href="#" class="nav__link nav__link--primary color__btn">Sign Up</a></li>
                 </ul>
+                <button class="navbar__menu--button" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="navbar__menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="navbar__menu--backdrop">
+                    <button class="navbar__menu--backdrop--button" onclick="closeMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="navbar__menu--cross">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    <button class="navbar__menu--backdrop--button" onclick="closeMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="navbar__menu--cross">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    <ul class="navbar__menu--backdrop--list">
+                        <li class="navbar__menu--backdrop--item">
+                            <a href="#" class="nav__link hover-underline-animation navbar__menu--item--text" "="">About</a>
+                          </li>
+                          <li class=" navbar__menu--backdrop--item">
+                                <a href="#" class="nav__link hover-underline-animation navbar__menu--item--text" "="">Blog</a>
+                          </li>
+                          <li class=" navbar__menu--backdrop--item">
+                                    <a href="#" class="nav__link hover-underline-animation navbar__menu--item--text" "="">Pricing</a>
+                          </li>
+                          <li class=" navbar__menu--backdrop--item">
+                                        <a href="#"
+                                            class="nav__link hover-underline-animation navbar__menu--item--text" "="">Contact Us</a>
+                          </li>
+                          <li class=" navbar__menu--backdrop--item">
+                                            <a href="#"
+                                                class="nav__link hover-underline-animation navbar__menu--item--text" "="">Login</a>
+                          </li>
+                          <li class=" navbar__menu--backdrop--item">
+                                                <a href="#"
+                                                    class="nav__link hover-underline-animation navbar__menu--item--text nav__signup">Sign
+                                                    Up</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <section id="about" class="container">
@@ -362,41 +413,61 @@
         <div class="footer__wrapper">
             <div class="row">
                 <div class="footer__lists__container">
-                        <ul class="footer__list">
-                            <li class="footer__list--title">Main</li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Blog</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">FAQs</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Support</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">About Us</a></li>
-                        </ul>
-                        <ul class="footer__list">
-                            <li class="footer__list--title">Product</li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Log In</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Personal</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Business</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Team</a></li>
-                        </ul>
-                        <ul class="footer__list">
-                            <li class="footer__list--title">Press</li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Logos</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Events</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Stories</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Office</a></li>
-                        </ul>
-                        <ul class="footer__list">
-                            <li class="footer__list--title">Team</li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Career</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Founders</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Culture</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Onboarding</a></li>
-                        </ul>
-                        <ul class="footer__list">
-                            <li class="footer__list--title">Legal</li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">GDPR</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Privacy Policy</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Terms of Service</a></li>
-                            <li class="footer__list--item"><a href="#" class="footer__list--link hover-underline-animation-white">Disclaimer</a></li>
-                        </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list--title">Main</li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Blog</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">FAQs</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Support</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">About Us</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list--title">Product</li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Log In</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Personal</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Business</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Team</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list--title">Press</li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Logos</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Events</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Stories</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Office</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list--title">Team</li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Career</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Founders</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Culture</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Onboarding</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list--title">Legal</li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">GDPR</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Privacy Policy</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Terms of Service</a></li>
+                        <li class="footer__list--item"><a href="#"
+                                class="footer__list--link hover-underline-animation-white">Disclaimer</a></li>
+                    </ul>
                 </div>
                 <div class="footer__divider--line"></div>
                 <div class="footer__copyright">
