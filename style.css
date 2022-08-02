@@ -1231,3 +1231,51 @@ footer {
         margin: 16px 0;
     }
 }
+
+@media (max-width: 440px) {
+    .email__input {
+        font-size: 10px;
+    }
+    .email__input--btn {
+        position: relative;
+        width: 100%;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .service__title {
+        text-align: center;
+    }
+
+    .value__highlights {
+        flex-wrap: wrap;
+    }
+
+    .value__highlight--item {
+        margin-top: 32px;
+        margin-right: 0px;
+    }
+
+    .value__highlight__title {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .feature__buy--btn {
+        width: auto;
+    }
+
+    .user__profile--container {
+        flex-direction: column;
+    }
+
+    .user__profile--img {
+        width: auto;
+    }
+
+    .user__profile-btn-container {
+        margin-top: 16px;
+    }
+}
